@@ -7,3 +7,4 @@ Usefull Links:
   https://csscompressor.com/
   https://babeljs.io/
   https://jscompress.com/
+  https://validator.w3.org/
