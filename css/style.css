@@ -348,8 +348,8 @@ header {
 	display: grid;
 	-ms-grid-columns: 1fr 55px 1fr 55px 1fr;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 55px;
-	grid-row-gap: 55px;
+	column-gap: 55px;
+	row-gap: 55px;
 }
 
 .benefits_card {
@@ -424,8 +424,8 @@ header {
 	display: grid;
 	-ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
 	grid-template-columns: repeat(6, 1fr);
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
+	column-gap: 10px;
+	row-gap: 10px;
 }
 
 .get-inspired__card {
@@ -517,8 +517,8 @@ header {
 	display: grid;
 	-ms-grid-columns: 1fr 77px 1fr;
 	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 77px;
-	grid-row-gap: 108px;
+	column-gap: 77px;
+	row-gap: 108px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -575,8 +575,8 @@ header {
 	display: grid;
 	-ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
 	grid-template-columns: repeat(6, 1fr);
-	grid-column-gap: 57px;
-	grid-row-gap: 57px;
+	column-gap: 57px;
+	row-gap: 57px;
 }
 
 .top-to-visit-card {
@@ -832,7 +832,7 @@ header {
 
 	.benefits_cards {
 		padding: 0 15px;
-		grid-column-gap: 25px;
+		column-gap: 25px;
 	}
 	
 	.benefits_card {
@@ -850,8 +850,8 @@ header {
 	}
 
 	.pref-and-neig-grid {
-		grid-column-gap: 50px;
-		grid-row-gap: 0;
+		column-gap: 50px;
+		row-gap: 0;
 	}
 
 	.pref-and-neig-card-title {
@@ -863,8 +863,8 @@ header {
 	}
 
 	.top-to-visit-cards {
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		column-gap: 15px;
+		row-gap: 15px;
 	}
 
 	.top-to-visit-card-pic .info .likes-and-comments {
