@@ -8,3 +8,5 @@ Usefull Links:
   https://babeljs.io/
   https://jscompress.com/
   https://validator.w3.org/
+  https://realfavicongenerator.net/
+  https://textolite.ru/
