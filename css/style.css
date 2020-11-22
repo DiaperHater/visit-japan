@@ -1,0 +1,1022 @@
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'),
+       url('../fonts/lato-v17-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v17-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+
+
+
+
+
+
+
+body {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal; 
+	font-size: 16px;
+	line-height: 1.2;
+	color: #102746;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.slim-wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.fat-wrapper {
+	max-width: 1264px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.arrow__link {
+	display: block;
+	width: 161px;
+	height: 24px;
+	text-decoration: none;
+	color: #006DFE;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	background: url("../img/svg/arrow-right-icon.svg") no-repeat 95%;
+}
+
+.arrow__link:hover, .arrow__link:focus {
+	background: url("../img/svg/arrow-right-icon.svg") no-repeat right;
+	transition: 0.2s all;
+}
+
+.section-title {
+	color: #102746;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+}
+
+.section-title::after {
+	margin-top: 7px;
+	display: block;
+	content: " ";
+	height: 3px;
+	width: 253px;
+	background: #006DFE;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Header styles START*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	transition: 0.4s linear;
+	padding-bottom: 20px;
+}
+
+.header-active {
+	background: rgba(14,29,40, 0.5);
+}
+
+.header_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 56px 0 0;
+}
+
+.header_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header_item {
+	margin-right: 82px;
+}
+
+.header_item:last-child {
+	margin-right: 0;
+}
+
+.header_link {
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+	opacity: 0.75;
+	text-decoration: underline;
+}
+
+.header-burger-wrapper {
+	display: none;
+}
+
+.header-burger {
+	width: 40px;
+	height: 30px;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+.burger-line {
+	display: block;
+	background-color: white;
+	width: 100%;
+	height: 2px;
+}
+
+
+
+
+
+
+
+
+/*Intro styles START*/
+.intro-section {
+	min-height: 100vh;
+	background: url("../img/intro-background-min.jpg") no-repeat top;
+	background-size: cover;
+	padding: 263px 0 376px;
+}
+
+.intro_title {
+	max-width: 619px;
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	margin: 0 0 22px;
+}
+
+.intro_subtitle {
+	max-width: 546px;
+	color: white;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 59px;
+}
+
+.search-form_wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.search-form_field {
+	width: 297px;
+	background: transparent url('../img/svg/circle_icon.svg') no-repeat left 6.5px;
+	background-size: 20px;
+	padding-left: 43px;
+	padding-bottom: 22px;
+	border: none;
+	border-bottom: 2px solid #BFC0C5 ;
+	margin-right: 60px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+
+.search-form_field::placeholder {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+
+.search-form_submit {
+	border: 0;
+	background: #1B7DFF;
+	color: white;
+	padding: 15px 39px;
+	font-family: Lato;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-transform: uppercase;
+}
+
+.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active {
+	background: #22579d;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Benefits styles START*/
+.benefits_wraper {
+	max-width: 1262px;
+	background: white;
+	margin: -223px auto 131px;
+	box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.benefits_title {
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+	padding: 93px 0 88px 100px;
+}
+
+.benefits_cards {
+	min-height: 30vh;
+	padding: 32px 100px 112px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 55px;
+	grid-row-gap: 55px;
+}
+
+.benefits_card {
+	grid-column: span 1;
+	color: black;
+	margin-bottom: 112px;
+}
+
+.benefits_card-icon {
+	width: 66px;
+	height: 66px;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 37px;
+}
+
+.benefits_card-title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 26px;
+}
+
+.benefits_card-desc {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Get Inspired styles START*/
+.get-inspired-wrapper {
+	margin-bottom: 131px;
+}
+
+.get-inspired__caption {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 37.5px;
+}
+
+.get-inspired__title {
+	margin-right: 50px;
+}
+
+.get-inspired__cards {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.get-inspired__card {
+	position: relative;
+	overflow: hidden;
+}
+
+.get-inspired__card::after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21, 24, 36, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.get-inspired__card:hover .get-inspired__pic{
+	transform: scale(1.05);
+}
+
+
+.get-inspired__card.large-card {
+	grid-column: span 3;
+}
+
+.get-inspired__card.small-card {
+	grid-column:span 2;
+}
+
+
+.get-inspired__card.large-card .get-inspired__pic {
+	height: 354px;
+}
+
+.get-inspired__card.small-card .get-inspired__pic {
+	height: 283px;
+}
+
+.get-inspired__pic {
+	width: 100%;
+	object-fit: cover;
+	transition: .15s all;
+}
+
+.get-inspired_pic-caption {
+	position: absolute;
+	left: 29px;
+	bottom: 27px;
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	z-index: 3;
+}
+
+.get-inspired-card-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+
+
+
+
+
+
+
+/*Prefecture & Neighborhood section*/
+.pref-and-neig {
+	margin-bottom: 139px;
+}
+
+.pref-and-neig-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 77px;
+	grid-row-gap: 108px;
+	align-items: center;
+}
+
+.pref-and-neig-card.card-1 {
+	margin-right: 47px;
+}
+
+.pref-and-neig-card.card-2 {
+	margin-left: 47px;
+}
+
+.pref-and-neig-card-title {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	color: #102746;
+	margin-bottom: 85px;
+}
+
+.pref-and-neig-card-desc{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 58px;
+}
+
+.pref-and-neig-grid .arrow__link {
+	width: 203px;
+}
+
+.pref-and-neig-grid .arrow__link.neig {
+	width: 239px;
+}
+
+
+
+
+
+
+
+/*Top Places To Visit*/
+.top-to-visit {
+	margin-bottom: 144px;
+}
+
+.top-to-visit-caption {
+	margin-bottom: 64px;
+}
+
+.top-to-visit-cards {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 57px;
+	grid-row-gap: 57px;
+}
+
+.top-to-visit-card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	grid-column: span 2;
+}
+
+.top-to-visit-card-pic {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.top-to-visit-card-pic .info {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55px;
+	background: rgba(21, 24, 36, 0.6);
+	z-index: 8;
+	padding: 0 25px;
+}
+
+.top-to-visit-card-pic .info .name {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+	margin-right: 25px;
+}
+
+.top-to-visit-card-pic .info
+.likes-and-comments {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.top-to-visit-card-pic .info
+.likes-and-comments .item {
+	display: flex;
+}
+
+.top-to-visit-card-pic .info
+.likes-and-comments .item .count {
+	margin-right: 4px;
+}
+
+
+.top-to-visit-card-pic .info .likes .count{
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 16px;
+	color: white;
+
+}
+
+.top-to-visit-card-pic .info .icon-wrap {
+	height: 24px;
+	width: 15px;
+	position: relative;
+}
+
+.icon-heart {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.icon-comment {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);	
+}
+
+.top-to-visit-card-pic .info .comments {
+	margin-left: 7px;
+}
+
+.top-to-visit-card-pic .info .comments .count{
+	display: inline-block;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 16px;
+	color: white;
+
+}
+
+.top-to-visit-card-pic .info .comments .icon-wrap {
+	display: inline-block;
+}
+
+.top-to-visit-card-description {
+	margin-bottom: 31px;
+}
+
+.see-more-link {
+	background: #006DFE;
+	width: 118px;
+	display: block;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 42px;
+	text-align: center;
+	color: white;
+	margin-top: auto;
+}
+
+
+
+
+
+
+
+/*Video section*/
+.video {
+	width: 100%;
+}
+
+.video-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.video-item {
+	padding-top: 56.25%;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+/*Footer*/
+
+.footer {
+	background: #0E1D28;
+	padding: 119px 0 194px;
+}
+
+.footer-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-logo {
+	width: 50%;
+}
+
+.footer-nav {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+
+.footer-nav {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-menu-title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+}
+
+.footer-menu-link {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+}
+
+.footer-menu-link:hover {
+	transform: scale(1.1);
+	opacity: 0.7;
+	text-decoration: underline;
+	transition: .2s all;
+}
+
+
+
+
+
+/*Media*/
+
+/*IPad*/
+@media screen and (max-width: 920px){
+	.search-form_field {
+		margin-bottom: 25px;
+	}
+	
+	.benefits_wraper {
+		margin-bottom: 0;
+		box-shadow: none;
+	}
+
+	.benefits_title {
+		padding: 55px 15px;
+	}
+
+	.benefits_cards {
+		padding: 0 15px;
+		grid-column-gap: 25px;
+	}
+	
+	.benefits_card {
+		margin-bottom: 80px;
+	}
+
+	.get-inspired__card.large-card {
+		grid-column: span 6;
+	}
+
+	.get-inspired__card.small-card {
+		grid-column:span 6;
+	}
+
+	.pref-and-neig-grid {
+		grid-column-gap: 50px;
+		grid-row-gap: 0;
+	}
+
+	.pref-and-neig-card-title {
+		margin-bottom: 15px;
+	}
+
+	.pref-and-neig-card-desc {
+		margin-bottom: 15px;
+	}
+
+	.top-to-visit-cards {
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+	}
+
+	.top-to-visit-card-pic .info .likes-and-comments {
+		justify-content: flex-end;
+	}
+
+	.top-to-visit-card-pic .info .name {
+		margin-right: 0;
+	}
+
+	.top-to-visit-card {
+		grid-column: span 3;
+	}
+
+	.thumb {
+		width: 100%;
+	}
+
+	.footer {
+		padding: 60px 90px;
+	}
+
+	.footer-logo-pic {
+		width: 50%;
+	}
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px){
+	
+	.header_wrapper {
+		padding-top: 16px;
+	}
+
+	.header-burger-wrapper {
+		display: block;
+	}
+
+	.header_nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: black;
+		padding: 75px;
+		transform: translateX(100%);
+		transition: .2s all linear;
+	}
+
+	.header_nav_active {
+		transform: translateX(0);
+	}
+
+	.header_item {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.header_item:last-child {
+		margin-bottom: 0;
+	}
+
+	.header_link {
+		font-size: 42px;
+		line-height: 48px;
+	}
+
+	.header-nav-close {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+
+	.header-nav-close-line {
+		display: block;
+		background: white;
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+	}
+
+	.header-nav-close-line:nth-child(1n) {
+		transform: translateY(-50%) rotate(45deg);		
+	}
+
+	.header-nav-close-line:nth-child(2n) {
+		transform: translateY(-50%) rotate(-45deg);		
+	}
+	
+	.intro-section {
+		padding-top: 100px;
+	}
+
+	.intro_title {
+	    font-size: 33px;
+	    line-height: 37px;
+	}
+
+	.intro_subtitle {
+		font-size: 14px;
+	    line-height: 19px;
+	}
+
+	.search-form_field {
+		width: 100%;
+		background-position: left;
+		background-size: 16px;
+		font-size: 16px;
+		padding-bottom: 0;
+		margin-right: 0; 
+	}
+
+	.search-form_field::placeholder {
+		font-size: 16px;
+	}
+
+	.search-form_submit {
+		width: 100%;
+		padding: 13px 0;
+	    font-size: 16px;
+	    line-height: 13.8px
+	}
+
+	.benefits_wraper {
+		margin-bottom: 60px;
+	}
+
+	.benefits_card {
+		grid-column: span 3;
+		margin-bottom: 10px;
+	}
+
+	.benefits_card-icon{
+		margin-bottom: 14px;
+	}
+
+	.benefits_card-title {
+		margin-bottom: 14px;
+	}
+
+	.benefits_card-desc {
+		margin-bottom: 26px;
+	}
+	
+	.section-title::after {
+		margin-bottom: 14px;
+	}
+
+	.get-inspired__card.large-card .get-inspired__pic {
+		height: 184px;
+	}
+
+	.get-inspired__card.small-card .get-inspired__pic {
+		height: 184px;
+	}
+
+	.get-inspired_pic-caption {
+		bottom: 0;
+		font-size: 25px;
+	}
+
+	.pref-and-neig{
+		margin-bottom: 38px;
+	}
+
+	.pref-and-neig-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.pref-and-neig-card {
+		margin-bottom: 39px;
+	}
+
+	.pref-and-neig-card.card-1 {
+		margin-right: 0;
+	}
+
+	.pref-and-neig-card.card-2 {
+		margin-left: 0;
+	}
+
+	.pref-and-neig-card-desc {
+		text-align: justify;
+	}
+
+	.pref-and-neig-pic:nth-child(2n) {
+		grid-row: 3;
+	}
+	
+	.top-to-visit {
+		margin-bottom: 50px;
+	}
+
+	.top-to-visit-caption {
+		margin-bottom: 40px;
+	}
+
+	.top-to-visit-card {
+		grid-column: span 6;
+	}
+
+	.top-to-visit-card-pic {
+		margin-bottom: 20px;
+	}
+
+	.top-to-visit-card-pic .info {
+		height: 20%;
+		padding: 0 10px;
+	}
+
+	.top-to-visit-card-pic .info .name {
+		font-size: 15px;
+	}
+
+	.top-to-visit-card-pic .info .likes .count {
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.top-to-visit-card-pic .info .comments .count {
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.top-to-visit-card-pic .info .icon-wrap {
+		height: 19px;
+	}
+
+	.top-to-visit-card-description {
+		margin-bottom: 18px;
+	}
+
+	.see-more-link {
+		margin-bottom: 40px;
+	}
+
+
+	.footer {
+		padding: 80px 15px;
+	}
+
+	.footer-item {
+		flex-flow: column;
+	}
+
+	.footer-logo {
+		width: 60%;
+		margin-bottom: 20px;
+	}
+
+	.footer-logo-pic {
+		width: 70%;
+	}
+
+	.footer-nav {
+		width: 100%;
+	}
+
+	.footer-menu-title {
+		font-size: 15px;
+	}
+
+	.footer-menu-link {
+		font-size: 13px;
+	    line-height: 18px;
+	}
+
+}
+
+/*Landscape Orientaion*/
+@media screen and (max-width: 767px) 
+and (orientation: landscape){
+	.top-to-visit-card {
+		grid-column: span 3;
+	}
+}
