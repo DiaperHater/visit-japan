@@ -1,4 +1,4 @@
-"use strict";
+++"use strict";
 
 (function () {
   var header = document.querySelector('.header');
