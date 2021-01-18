@@ -41,6 +41,8 @@ img {
 	padding: 0 15px;
 }
 
+
+/* regular-blue-16-lh24 */
 .arrow-link {
 	display: block;
 	width: 161px;
@@ -60,9 +62,10 @@ img {
 	transition: 0.2s all;
 }
 
+/* regular-35-lh42-dark-navy */
 .section-title {
 	color: #102746;
-	font-weight: 500;
+	/* font-weight: 500; */
 	font-size: 35px;
 	line-height: 42px;
 }
@@ -129,6 +132,7 @@ header {
 	margin-right: 0;
 }
 
+/* regular-18-lh24-white-noul */
 .header-link {
 	font-size: 18px;
 	line-height: 24px;
@@ -153,10 +157,10 @@ header {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-flow: column;
-	        flex-flow: column;
+	-ms-flex-flow: column;
+    flex-flow: column;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+    justify-content: space-around;
 }
 
 .burger-line {
